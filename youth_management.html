@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Youth & Sports Management - Khombole</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec6d",
+                        "primary-dark": "#0ea64d",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102218",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1a2e22",
+                        "text-main-light": "#0d1b13",
+                        "text-main-dark": "#ffffff",
+                        "text-sub-light": "#4c9a6c",
+                        "text-sub-dark": "#8ebf9f",
+                        "border-light": "#e7f3ec",
+                        "border-dark": "#2a4034",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-filled {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main-light dark:text-text-main-dark min-h-screen flex flex-col overflow-x-hidden transition-colors duration-200">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined !text-3xl">local_florist</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Khombole Municipal Platform</h2>
+</div>
+<div class="hidden lg:flex items-center gap-9">
+    <a class="text-sm font-medium hover:text-primary transition-colors" href="projects_tracking.html">Accueil</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="civil_status.html">Demande administrative</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="citizen_participation.html">Digitalization</a>
+<a class="text-sm font-medium text-primary font-bold" href="youth_management.html">Youth &amp; Sports</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="Admin.html">Governance</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-text-sub-light dark:text-text-sub-dark hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="hidden sm:flex items-center bg-background-light dark:bg-background-dark rounded-lg px-3 py-2 border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-text-sub-light dark:text-text-sub-dark text-xl">search</span>
+<input class="bg-transparent border-none text-sm ml-2 focus:ring-0 w-48 text-text-main-light dark:text-text-main-dark placeholder-text-sub-light dark:placeholder-text-sub-dark" placeholder="Search activities..."/>
+</div>
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-10 border-2 border-primary cursor-pointer" data-alt="User profile picture showing a smiling municipal administrator" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8wMwLi5lgloxq1DQ7OKhiU_IKTwt3mAmhV_bs2H-aeSfSeIhyyJ6avbt7A963Y1RdRPkKs5GF-ZRUNHtlx-N1YPzIRMPkCtMcAUhtnGB07kiHDYLrQp5xxD_EPg4MEt7JAjKp6AYeSxSmB570UNwMd603r-Mz2OmG8sgoiRASY5HIXfKjwq92xFqCPTs4gvRWq2yviqisTKdnAtS07urFg4NHukpvAO4gkcTfUA3OnUQj9-Nimiy50GTV4_HlTGXqhsinJaCl2RM");'>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1440px] mx-auto px-4 md:px-10 py-8">
+<!-- Page Heading & Actions -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-8">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-1 rounded bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider">Department</span>
+<span class="flex items-center text-xs text-text-sub-light dark:text-text-sub-dark gap-1">
+<span class="material-symbols-outlined text-sm">verified</span> Verified Eco-Active
+                    </span>
+</div>
+<h1 class="text-3xl md:text-4xl font-black tracking-tight">Youth &amp; Sports Directorate</h1>
+<p class="text-text-sub-light dark:text-text-sub-dark text-base max-w-2xl">
+                    Manage local competitions, coordinate infrastructure reservations, and empower youth associations through our digital eco-hub.
+                </p>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark text-sm font-bold hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<span class="material-symbols-outlined text-lg">download</span>
+                    Monthly Report
+                </button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-black text-sm font-bold hover:bg-primary-dark hover:text-white transition-colors shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-lg">add</span>
+                    New Initiative
+                </button>
+</div>
+</div>
+<!-- Stats Overview -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg text-blue-600 dark:text-blue-400">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<span class="text-primary text-sm font-bold bg-primary/10 px-2 py-0.5 rounded-full">+5%</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Registered Associations</p>
+<p class="text-2xl font-bold mt-1">42</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg text-orange-600 dark:text-orange-400">
+<span class="material-symbols-outlined">calendar_month</span>
+</div>
+<span class="text-primary text-sm font-bold bg-primary/10 px-2 py-0.5 rounded-full">+12%</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Active Reservations</p>
+<p class="text-2xl font-bold mt-1">18</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg text-purple-600 dark:text-purple-400">
+<span class="material-symbols-outlined">sports_soccer</span>
+</div>
+<span class="text-gray-500 text-sm font-bold bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">Stable</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Upcoming Matches</p>
+<p class="text-2xl font-bold mt-1">12</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-primary/20 rounded-lg text-primary-dark">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<span class="text-primary text-sm font-bold bg-primary/10 px-2 py-0.5 rounded-full">+15%</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Eco-Certified Events</p>
+<p class="text-2xl font-bold mt-1">8</p>
+</div>
+</div>
+<!-- Quick Actions Toolbar -->
+<div class="mb-8">
+<h3 class="text-xl font-bold mb-4 px-1">Quick Management</h3>
+<div class="flex flex-wrap gap-3">
+<button class="flex-1 min-w-[200px] h-14 bg-primary hover:bg-primary-dark text-black hover:text-white font-bold rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm">
+<span class="material-symbols-outlined">trophy</span>
+                    New Competition
+                </button>
+<button class="flex-1 min-w-[200px] h-14 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark hover:border-primary text-text-main-light dark:text-text-main-dark font-bold rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm">
+<span class="material-symbols-outlined">stadium</span>
+                    Reserve Facility
+                </button>
+<button class="flex-1 min-w-[200px] h-14 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark hover:border-primary text-text-main-light dark:text-text-main-dark font-bold rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm">
+<span class="material-symbols-outlined">app_registration</span>
+                    Register Association
+                </button>
+<button class="flex-1 min-w-[200px] h-14 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark hover:border-primary text-text-main-light dark:text-text-main-dark font-bold rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm">
+<span class="material-symbols-outlined">campaign</span>
+                    Post Announcement
+                </button>
+</div>
+</div>
+<!-- Main Content Split -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-8">
+<!-- Left Column: Calendar & Competitions (60-ish%) -->
+<div class="xl:col-span-8 flex flex-col gap-8">
+<!-- Infrastructure Calendar -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark overflow-hidden">
+<div class="p-5 border-b border-border-light dark:border-border-dark flex justify-between items-center">
+<h3 class="font-bold text-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">calendar_month</span>
+                            Facility Schedule
+                        </h3>
+<div class="flex gap-2">
+<button class="size-8 rounded-full hover:bg-background-light dark:hover:bg-background-dark flex items-center justify-center border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<span class="text-sm font-medium flex items-center px-2">Oct 24 - Oct 30</span>
+<button class="size-8 rounded-full hover:bg-background-light dark:hover:bg-background-dark flex items-center justify-center border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full min-w-[600px] text-sm text-left">
+<thead class="bg-background-light dark:bg-background-dark text-text-sub-light dark:text-text-sub-dark">
+<tr>
+<th class="px-6 py-3 font-medium">Facility</th>
+<th class="px-6 py-3 font-medium">08:00 - 12:00</th>
+<th class="px-6 py-3 font-medium">12:00 - 16:00</th>
+<th class="px-6 py-3 font-medium">16:00 - 20:00</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-light dark:divide-border-dark">
+<tr>
+<td class="px-6 py-4 font-bold">Stadium A</td>
+<td class="px-6 py-4"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300">Booked</span></td>
+<td class="px-6 py-4"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300">Available</span></td>
+<td class="px-6 py-4"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300">Booked</span></td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-bold">Basketball Court</td>
+<td class="px-6 py-4"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300">Available</span></td>
+<td class="px-6 py-4"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300">Available</span></td>
+<td class="px-6 py-4"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-300">Maintenance</span></td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-bold">Youth Hall</td>
+<td class="px-6 py-4"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300">Booked</span></td>
+<td class="px-6 py-4"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300">Booked</span></td>
+<td class="px-6 py-4"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300">Available</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Upcoming Competitions -->
+<div>
+<div class="flex justify-between items-center mb-4 px-1">
+<h3 class="text-xl font-bold">Upcoming Matches</h3>
+<a class="text-primary hover:text-primary-dark text-sm font-bold flex items-center gap-1" href="#">View All <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Match Card 1 -->
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-xl border border-border-light dark:border-border-dark flex flex-col sm:flex-row items-center justify-between gap-4 hover:border-primary transition-colors">
+<div class="flex items-center gap-4 flex-1 w-full">
+<div class="bg-background-light dark:bg-background-dark p-2 rounded-lg text-center min-w-[60px]">
+<span class="block text-xs text-text-sub-light dark:text-text-sub-dark font-bold uppercase">OCT</span>
+<span class="block text-xl font-black">28</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<h4 class="font-bold text-lg">Lions FC <span class="text-text-sub-light dark:text-text-sub-dark font-normal mx-1">vs</span> Tigers United</h4>
+<span class="bg-primary/10 text-primary-dark text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">eco</span> Eco-Certified
+                                        </span>
+</div>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span> Municipal Stadium A • 16:00
+                                    </p>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-4 py-2 rounded-lg border border-border-light dark:border-border-dark text-sm font-medium hover:bg-background-light dark:hover:bg-background-dark">Details</button>
+<button class="flex-1 sm:flex-none px-4 py-2 rounded-lg bg-black dark:bg-white text-white dark:text-black text-sm font-medium hover:opacity-80">Tickets</button>
+</div>
+</div>
+<!-- Match Card 2 -->
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-xl border border-border-light dark:border-border-dark flex flex-col sm:flex-row items-center justify-between gap-4 hover:border-primary transition-colors">
+<div class="flex items-center gap-4 flex-1 w-full">
+<div class="bg-background-light dark:bg-background-dark p-2 rounded-lg text-center min-w-[60px]">
+<span class="block text-xs text-text-sub-light dark:text-text-sub-dark font-bold uppercase">OCT</span>
+<span class="block text-xl font-black">30</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<h4 class="font-bold text-lg">Youth Academy <span class="text-text-sub-light dark:text-text-sub-dark font-normal mx-1">vs</span> City High</h4>
+</div>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span> Basketball Court • 14:30
+                                    </p>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-4 py-2 rounded-lg border border-border-light dark:border-border-dark text-sm font-medium hover:bg-background-light dark:hover:bg-background-dark">Details</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Associations & News (40-ish%) -->
+<div class="xl:col-span-4 flex flex-col gap-8">
+<!-- Association Spotlight -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark p-5">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-bold text-lg">Active Associations</h3>
+<a class="text-primary hover:text-primary-dark text-sm" href="#">See all</a>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Assoc Card 1 -->
+<div class="p-3 rounded-lg border border-border-light dark:border-border-dark hover:border-primary/50 transition-colors flex flex-col items-center text-center gap-2">
+<div class="size-12 rounded-full bg-cover bg-center" data-alt="Logo of Green Youth Alliance showing abstract leaf and people" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCE9rPHtbh1XOeysL1pB4hJYjp7BHFoAloZKFapHyRycbQKbrv8P3d16pJjd_jCxZPvDr7EEogqJ9V2decFCFeWntjLySVvCsuJw4GpULSofo6Klsw_ErC8AHrbM5aIJEcuw40OnCDDsXFbZdUn7Oe7-N7sptaJJmXAvC9OlB2s4OhOVWafTfW6PDx9xNkm2TxVwqVNHpujh_ZbLJTpYI2GdetFrbDtfMPyN_n9TkpPrhiHX_C0KUkHdQtc-xA4UJaaOm_Nhj4e7A4");'></div>
+<div>
+<h4 class="font-bold text-sm leading-tight">Green Youth</h4>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark mt-0.5">Eco &amp; Sports</p>
+</div>
+</div>
+<!-- Assoc Card 2 -->
+<div class="p-3 rounded-lg border border-border-light dark:border-border-dark hover:border-primary/50 transition-colors flex flex-col items-center text-center gap-2">
+<div class="size-12 rounded-full bg-cover bg-center" data-alt="Logo of Digital Sports Club showing a pixelated ball" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZuoRWf3qIl1DCY5kfdaQ1vJ3jZCKvGWU_QmrcL93P0bau7f7Gc2sm9SOf0u_N0kDaefn_a53d2XTCOs8iitq95PVVaqYFBS1Picai8M0WPlqcY50pOd-hNLRM9MGLiq9fIvWOb_ieZrL8YXEUXIeNHjD2nsz_imeJVdR9aNqAj0u7QhPiWVKjJdYvq_yKdfelMzSQ1ZmAXb_FjT8y2kGI2CgNpQDvi6bNJWMz_1FsFDrBhBw-wYSwdmQUpt0JY4GbDTJzRVKVg7E");'></div>
+<div>
+<h4 class="font-bold text-sm leading-tight">DigiSport</h4>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark mt-0.5">E-Sports</p>
+</div>
+</div>
+<!-- Assoc Card 3 -->
+<div class="p-3 rounded-lg border border-border-light dark:border-border-dark hover:border-primary/50 transition-colors flex flex-col items-center text-center gap-2">
+<div class="size-12 rounded-full bg-cover bg-center" data-alt="Logo of Khombole Runners showing a shoe with wings" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAhXWbC6jm3DGJCghDmrlb-aAVLorZc2yrZ7pew2yAsQhhLt7nz7K6bvWTQHSikYkQXKOCBpcY6z-kWjO8W6W4bQIrw_MdYqiM9h5nXuu7c8f8mNSUGl4gAu0mlfDjjoLMbHkHf_5GA30C1PRTnrQXr6zcAZeu6xdoZgO9kXMPd904JIup-bKiOhkTxmx5TjWr8FPU12fpz92HzAH7cVX2zGuxKCkC9PnEWjgH20iEeeo8x0IrckUbt4mMDwTn7tcZ380d8PIpQE1A");'></div>
+<div>
+<h4 class="font-bold text-sm leading-tight">K-Runners</h4>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark mt-0.5">Athletics</p>
+</div>
+</div>
+<!-- Add New Assoc -->
+<button class="p-3 rounded-lg border border-dashed border-border-light dark:border-border-dark hover:border-primary text-text-sub-light dark:text-text-sub-dark hover:text-primary transition-colors flex flex-col items-center justify-center text-center gap-2 h-full">
+<span class="material-symbols-outlined text-3xl">add_circle</span>
+<span class="text-xs font-bold">Register New</span>
+</button>
+</div>
+</div>
+<!-- News & Updates Widget -->
+<div class="bg-primary/5 dark:bg-primary/10 rounded-xl border border-primary/20 p-5">
+<h3 class="font-bold text-lg mb-4 text-primary-dark">Announcements</h3>
+<div class="flex flex-col gap-4">
+<div class="pb-3 border-b border-primary/10">
+<span class="text-xs font-bold text-text-sub-light dark:text-text-sub-dark uppercase">Oct 25, 2023</span>
+<h4 class="font-bold text-sm mt-1 mb-1">New "Plastic-Free" Policy for Stadiums</h4>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark line-clamp-2">All sports events in municipal facilities must now adhere to the zero-plastic waste policy...</p>
+<a class="text-xs font-bold text-primary mt-2 inline-block" href="#">Read more</a>
+</div>
+<div>
+<span class="text-xs font-bold text-text-sub-light dark:text-text-sub-dark uppercase">Oct 22, 2023</span>
+<h4 class="font-bold text-sm mt-1 mb-1">Digital IDs for Youth Athletes</h4>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark line-clamp-2">Registration is now open for the unified digital sports pass for all commune youth.</p>
+<a class="text-xs font-bold text-primary mt-2 inline-block" href="#">Register now</a>
+</div>
+</div>
+</div>
+<!-- Digitalization Promo -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 text-white p-6">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">qr_code_scanner</span>
+<h3 class="font-bold text-lg mb-1">Go Digital</h3>
+<p class="text-sm text-gray-300 mb-4">Download the Khombole Sports app to book facilities and get tickets instantly.</p>
+<button class="bg-primary text-black text-xs font-bold px-4 py-2 rounded shadow-lg hover:bg-white transition-colors">Get App</button>
+</div>
+<!-- Abstract Background Pattern -->
+<div class="absolute -right-8 -bottom-8 opacity-20" data-alt="Abstract geometric pattern background">
+<span class="material-symbols-outlined text-[150px]">smartphone</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Simple Footer -->
+<footer class="border-t border-border-light dark:border-border-dark mt-auto bg-card-light dark:bg-card-dark py-8 px-10">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-text-sub-light dark:text-text-sub-dark">
+<p>© 2026 Commune de Khombole. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Support</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec6d",
+                        "background-light": "#f8fcfa",
+                        "background-dark": "#102218",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a3526",
+                        "border-light": "#e7f3ec",
+                        "border-dark": "#2a4a36",
+                        "text-main-light": "#0d1b13",
+                        "text-main-dark": "#f0fdf4",
+                        "text-sub-light": "#4c9a6c",
+                        "text-sub-dark": "#8fcba5",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main-light dark:text-text-main-dark transition-colors duration-200">
+<div class="flex h-screen w-full overflow-hidden">
+<!-- Sidebar -->
+<aside class="hidden md:flex w-64 flex-col border-r border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark transition-colors duration-200">
+<div class="flex flex-col h-full p-4 justify-between">
+<div class="flex flex-col gap-6">
+<div class="px-2">
+<h1 class="text-text-main-light dark:text-text-main-dark text-xl font-bold leading-normal">Khombole</h1>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-normal">Municipality Admin</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-border-light dark:bg-surface-dark group" href="#">
+<span class="material-symbols-outlined text-primary">dashboard</span>
+<p class="text-text-main-light dark:text-text-main-dark text-sm font-bold">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-border-light dark:hover:bg-surface-dark transition-colors group" href="#">
+<span class="material-symbols-outlined text-text-main-light dark:text-text-sub-dark group-hover:text-primary">poll</span>
+<p class="text-text-main-light dark:text-text-sub-dark text-sm font-medium">Surveys</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-border-light dark:hover:bg-surface-dark transition-colors group" href="#">
+<span class="material-symbols-outlined text-text-main-light dark:text-text-sub-dark group-hover:text-primary">description</span>
+<p class="text-text-main-light dark:text-text-sub-dark text-sm font-medium">Proposals</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-border-light dark:hover:bg-surface-dark transition-colors group" href="#">
+<span class="material-symbols-outlined text-text-main-light dark:text-text-sub-dark group-hover:text-primary">work</span>
+<p class="text-text-main-light dark:text-text-sub-dark text-sm font-medium">Projects</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-border-light dark:hover:bg-surface-dark transition-colors group" href="#">
+<span class="material-symbols-outlined text-text-main-light dark:text-text-sub-dark group-hover:text-primary">chat</span>
+<p class="text-text-main-light dark:text-text-sub-dark text-sm font-medium">Messages</p>
+</a>
+</nav>
+</div>
+<div class="px-2 pb-4">
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="h-10 w-10 rounded-full bg-cover bg-center" data-alt="Portrait of the current user" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBDIW6OvBfUo39srNYpWd6sOfc7tgaS3vpdpkZs88f1suyFyEqufiIoLsQH7gA_4WJjN-SbNzUYxqeM95bHLY-t-yC_0XIN61EcIx1BUApBfpzoin1xMcN9pGaBuM2QDzOLOYbVaATKG9UGS2MLqeJlvDG5KWp-4TlxaeNg2hAaQlj7ImuDwhierFyx1y4Q8jLCrmbGWb7sSN56cZTr57ho-GazpQ_ZOUQ8IkS5PGMMsIeo00AlaAsplX0m4ztneGmmRPN7IcbwotU');"></div>
+<div class="flex flex-col">
+<p class="text-xs font-bold text-text-main-light dark:text-text-main-dark">Moussa Diop</p>
+<p class="text-[10px] text-text-sub-light dark:text-text-sub-dark">Administrator</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<div class="flex flex-col flex-1 h-full overflow-hidden bg-background-light dark:bg-background-dark">
+<!-- Top Navbar -->
+<header class="flex items-center justify-between border-b border-border-light dark:border-border-dark px-6 py-4 bg-background-light dark:bg-background-dark z-10">
+<div class="flex items-center gap-4 md:hidden">
+<button class="text-text-main-light dark:text-text-main-dark">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h2 class="text-lg font-bold">Khombole</h2>
+</div>
+<div class="hidden md:flex items-center gap-4">
+<h2 class="text-text-main-light dark:text-text-main-dark text-lg font-bold">Citizen Participation Hub</h2>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex relative items-center h-10 w-64 rounded-lg bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark overflow-hidden">
+<div class="pl-3 text-text-sub-light">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full bg-transparent border-none text-sm text-text-main-light dark:text-text-main-dark placeholder-text-sub-light dark:placeholder-text-sub-dark focus:ring-0 px-2" placeholder="Search projects, citizens..." type="text"/>
+</div>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-surface-light dark:bg-surface-dark text-text-main-light dark:text-text-main-dark hover:bg-border-light dark:hover:bg-border-dark transition-colors">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-surface-light dark:bg-surface-dark text-text-main-light dark:text-text-main-dark hover:bg-border-light dark:hover:bg-border-dark transition-colors">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+</div>
+</header>
+<!-- Scrollable Content -->
+<main class="flex-1 overflow-y-auto p-6 md:p-8 scroll-smooth">
+<div class="max-w-7xl mx-auto flex flex-col gap-8">
+<!-- Heading & Actions -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div>
+<h1 class="text-3xl md:text-4xl font-black text-text-main-light dark:text-text-main-dark tracking-tight mb-1">Admin Dashboard</h1>
+<p class="text-text-sub-light dark:text-text-sub-dark">Overview of initiatives, surveys, and citizen feedback.</p>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center gap-2 px-4 h-10 rounded-lg bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-main-light dark:text-text-main-dark text-sm font-bold shadow-sm hover:bg-gray-50 dark:hover:bg-border-dark transition-colors">
+<span class="material-symbols-outlined text-[20px]">edit_document</span>
+                                Post Update
+                            </button>
+<button class="flex items-center gap-2 px-5 h-10 rounded-lg bg-primary text-text-main-light text-sm font-bold shadow-sm hover:brightness-105 transition-all">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+                                Create Survey
+                            </button>
+</div>
+</div>
+<!-- Stats Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Stat Card 1 -->
+<div class="flex flex-col gap-1 p-5 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex justify-between items-start">
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Active Proposals</p>
+<span class="material-symbols-outlined text-primary text-[24px]">description</span>
+</div>
+<p class="text-2xl font-bold text-text-main-light dark:text-text-main-dark mt-2">24</p>
+<p class="text-primary text-xs font-bold">+5% <span class="text-text-sub-light dark:text-text-sub-dark font-normal">vs last month</span></p>
+</div>
+<!-- Stat Card 2 -->
+<div class="flex flex-col gap-1 p-5 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex justify-between items-start">
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Pending Surveys</p>
+<span class="material-symbols-outlined text-primary text-[24px]">poll</span>
+</div>
+<p class="text-2xl font-bold text-text-main-light dark:text-text-main-dark mt-2">3</p>
+<p class="text-primary text-xs font-bold">+12% <span class="text-text-sub-light dark:text-text-sub-dark font-normal">participation</span></p>
+</div>
+<!-- Stat Card 3 -->
+<div class="flex flex-col gap-1 p-5 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex justify-between items-start">
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Youth Engagement</p>
+<span class="material-symbols-outlined text-primary text-[24px]">groups</span>
+</div>
+<p class="text-2xl font-bold text-text-main-light dark:text-text-main-dark mt-2">1,450</p>
+<p class="text-primary text-xs font-bold">+20% <span class="text-text-sub-light dark:text-text-sub-dark font-normal">new accounts</span></p>
+</div>
+<!-- Stat Card 4 -->
+<div class="flex flex-col gap-1 p-5 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex justify-between items-start">
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Ongoing Projects</p>
+<span class="material-symbols-outlined text-primary text-[24px]">engineering</span>
+</div>
+<p class="text-2xl font-bold text-text-main-light dark:text-text-main-dark mt-2">8</p>
+<p class="text-text-sub-light dark:text-text-sub-dark text-xs font-normal">On schedule</p>
+</div>
+</div>
+<!-- Middle Section: Projects & Ecology -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Project Tracking (Main) -->
+<div class="lg:col-span-2 flex flex-col rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm overflow-hidden">
+<div class="px-6 py-4 border-b border-border-light dark:border-border-dark flex justify-between items-center bg-gray-50/50 dark:bg-white/5">
+<h3 class="font-bold text-lg text-text-main-light dark:text-text-main-dark">Project Tracking Map</h3>
+<button class="text-sm text-primary font-bold hover:underline">View Full Map</button>
+</div>
+<div class="relative h-64 w-full bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover opacity-80" data-alt="Map view showing geographic distribution of projects in Khombole" data-location="Khombole" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVUaUBtPAabKGc-ZbB4ZQC4SteQVyhMFAlSo0fMmtQQh0XGtN-PY3ca9UdvStY829gAvf--4PZUU8hp_RO81aSG6fkw8uOnBDumtw-l5wz8ejCOaNTvmgjBmlBhAlNnJC_PdiqvFQMOaTKbG4UryDTv71g11zn43K3R12f8Cbc51LenLUoPniCVNIuGfFcmi2Py_c6JWFkbXPmzwsQWqrQd6oPLuaX9OSkVotqiL8nhs2vvc3FvdRuMzncyAfCgclnZhlcbuUiDLc"/>
+<div class="absolute top-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm p-2 rounded-lg text-xs font-medium shadow-sm">
+<div class="flex items-center gap-2 mb-1">
+<div class="w-2 h-2 rounded-full bg-primary"></div> Active
+                                    </div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-orange-400"></div> Delayed
+                                    </div>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<!-- Project Item 1 -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm">
+<span class="font-bold text-text-main-light dark:text-text-main-dark">Reforestation Sector A</span>
+<span class="text-primary font-bold">75%</span>
+</div>
+<div class="w-full bg-border-light dark:bg-border-dark rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<!-- Project Item 2 -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm">
+<span class="font-bold text-text-main-light dark:text-text-main-dark">Digitalization of Civil Registry</span>
+<span class="text-primary font-bold">40%</span>
+</div>
+<div class="w-full bg-border-light dark:bg-border-dark rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 40%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Ecology Spotlight (Side) -->
+<div class="flex flex-col rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="px-6 py-4 border-b border-border-light dark:border-border-dark bg-green-50 dark:bg-green-900/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">eco</span>
+<h3 class="font-bold text-lg text-text-main-light dark:text-text-main-dark">Ecology Spotlight</h3>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-6 flex-1 justify-center">
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400">
+<span class="material-symbols-outlined">forest</span>
+</div>
+<div>
+<p class="text-2xl font-bold text-text-main-light dark:text-text-main-dark">128</p>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark">Trees planted this month</p>
+</div>
+</div>
+<div class="h-px bg-border-light dark:bg-border-dark w-full"></div>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400">
+<span class="material-symbols-outlined">recycling</span>
+</div>
+<div>
+<p class="text-2xl font-bold text-text-main-light dark:text-text-main-dark">85%</p>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark">Waste collection efficiency</p>
+</div>
+</div>
+<div class="mt-2">
+<button class="w-full py-2 rounded-lg border border-primary text-primary text-sm font-bold hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors">
+                                        View Full Report
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Proposals & Feedback -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-6">
+<!-- Proposal Triage -->
+<div class="flex flex-col rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm h-full">
+<div class="px-6 py-4 border-b border-border-light dark:border-border-dark flex justify-between items-center">
+<h3 class="font-bold text-lg text-text-main-light dark:text-text-main-dark">Recent Proposals</h3>
+<button class="text-sm text-primary font-bold hover:underline">See All</button>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<!-- Proposal Card 1 -->
+<div class="p-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark/50 flex gap-4 items-start">
+<div class="mt-1 min-w-[40px] h-10 w-10 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-300 font-bold">JD</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-bold text-text-main-light dark:text-text-main-dark">Community Garden in Sector 4</h4>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-200">PENDING</span>
+</div>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark line-clamp-2 mb-3">Proposal to utilize the empty lot near the school for a student-run vegetable garden.</p>
+<div class="flex gap-2">
+<button class="px-3 py-1.5 rounded-md bg-primary text-text-main-light text-xs font-bold hover:brightness-105">Approve</button>
+<button class="px-3 py-1.5 rounded-md bg-transparent border border-gray-300 dark:border-gray-600 text-text-main-light dark:text-text-main-dark text-xs font-bold hover:bg-gray-100 dark:hover:bg-gray-800">Review</button>
+</div>
+</div>
+</div>
+<!-- Proposal Card 2 -->
+<div class="p-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark/50 flex gap-4 items-start">
+<div class="mt-1 min-w-[40px] h-10 w-10 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-orange-600 dark:text-orange-300 font-bold">AS</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-bold text-text-main-light dark:text-text-main-dark">Solar Street Lights</h4>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-200">APPROVED</span>
+</div>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark line-clamp-2 mb-3">Request to install solar powered lights along the main market road for safety.</p>
+<div class="flex gap-2">
+<button class="px-3 py-1.5 rounded-md bg-transparent border border-gray-300 dark:border-gray-600 text-text-main-light dark:text-text-main-dark text-xs font-bold hover:bg-gray-100 dark:hover:bg-gray-800">Details</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Feedback Stream -->
+<div class="flex flex-col rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm h-full">
+<div class="px-6 py-4 border-b border-border-light dark:border-border-dark flex justify-between items-center">
+<h3 class="font-bold text-lg text-text-main-light dark:text-text-main-dark">Citizen Feedback</h3>
+<div class="flex gap-2">
+<span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+<span class="text-xs font-medium text-text-sub-light">Live</span>
+</div>
+</div>
+<div class="p-0 flex flex-col h-full overflow-hidden">
+<div class="flex flex-col divide-y divide-border-light dark:divide-border-dark">
+<!-- Comment 1 -->
+<div class="p-4 hover:bg-background-light dark:hover:bg-background-dark/30 transition-colors">
+<div class="flex gap-3">
+<div class="h-8 w-8 rounded-full bg-cover bg-center flex-shrink-0" data-alt="Portrait of citizen Fatou" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOgXoPeQkH08h7umOp-SGyxuEySPsIgbXVy7AWoLegRJ8LERcVVn4kQA26kDETjN_Oq3eCRIiJT1gFGGqz8NfJbmWbX9T0yinhiTVEtTHEnpK6czuUOerutx6yBkLFP_Obs2fPg-fFeMFLRSJ8vNFD4Rwumpq8RwirhmjZ1JoDqHFxdjwP_nWfvc9IuxV32OREWxpr6FPXpMfY_XqCXgd2Orya1l14452QBaBGSEkYpVrOthbruew1AeVaPFJKQR4dpqv5B5jmFkg');"></div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<p class="text-sm font-bold text-text-main-light dark:text-text-main-dark">Fatou Ndiaye</p>
+<span class="text-[10px] text-text-sub-light">2m ago</span>
+</div>
+<p class="text-xs text-text-main-light dark:text-text-main-dark">The new youth center plans look great! Will there be a computer lab included?</p>
+<div class="mt-2 flex gap-3">
+<button class="text-xs font-bold text-primary hover:text-green-600">Reply</button>
+<button class="text-xs font-medium text-text-sub-light hover:text-text-main-light">Like</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Comment 2 -->
+<div class="p-4 hover:bg-background-light dark:hover:bg-background-dark/30 transition-colors">
+<div class="flex gap-3">
+<div class="h-8 w-8 rounded-full bg-cover bg-center flex-shrink-0" data-alt="Portrait of citizen Amadou" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLBD4_P9jANT3kIWz7rDxu1rdFoKzXb41czlsWr1IMV2NW-LJrpg8C_GYLKqnm8RDeXoGvVJeU3tEhNULGEbHw35Wi7judiitQxLvtBl8W8Uo5bz7dWp93-ikbFLfWe1hzDKimm8dnKvLmtS5QoxC8cKx5Pp0cAQVKj1iu3Os4AYz10NIEGHiI9AijBH3-GDq7h-tPDUIzjmYX1FsoT4C58I2jl7sqy95n7tfL_XH7Bfx62Dx3BMhWux0uNuQ1tGJVCiJcF3Ug4Nk');"></div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<p class="text-sm font-bold text-text-main-light dark:text-text-main-dark">Amadou Fall</p>
+<span class="text-[10px] text-text-sub-light">15m ago</span>
+</div>
+<p class="text-xs text-text-main-light dark:text-text-main-dark">Regarding the waste management survey: Question 4 is a bit confusing.</p>
+<div class="mt-2 flex gap-3">
+<button class="text-xs font-bold text-primary hover:text-green-600">Reply</button>
+<button class="text-xs font-medium text-text-sub-light hover:text-text-main-light">Like</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Comment 3 -->
+<div class="p-4 hover:bg-background-light dark:hover:bg-background-dark/30 transition-colors">
+<div class="flex gap-3">
+<div class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
+                                                MK
+                                            </div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<p class="text-sm font-bold text-text-main-light dark:text-text-main-dark">Mariama Kane</p>
+<span class="text-[10px] text-text-sub-light">1h ago</span>
+</div>
+<p class="text-xs text-text-main-light dark:text-text-main-dark">Happy to see the new trees on Main Street!</p>
+<div class="mt-2 flex gap-3">
+<button class="text-xs font-bold text-primary hover:text-green-600">Reply</button>
+<button class="text-xs font-medium text-text-sub-light hover:text-text-main-light">Like</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

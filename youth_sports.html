@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agenda Jeunesse et Sports - Khombole Connect</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec6d",
+                        "primary-dark": "#0ea64d",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102218",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1a2e22",
+                        "text-main-light": "#0d1b13",
+                        "text-main-dark": "#ffffff",
+                        "text-sub-light": "#4c9a6c",
+                        "text-sub-dark": "#8ebf9f",
+                        "border-light": "#e7f3ec",
+                        "border-dark": "#2a4034",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-filled {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main-light dark:text-text-main-dark min-h-screen flex flex-col overflow-x-hidden transition-colors duration-200">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4">
+<div class="size-8 flex items-center justify-center">
+<img src="OIP.jpg" alt="Khombole Logo" class="w-full h-full object-cover rounded"/>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Mairie de Khombole</h2>
+</div>
+<div class="hidden lg:flex items-center gap-9">
+    <a class="text-sm font-medium hover:text-primary transition-colors" href="projects_tracking.html">Accueil</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="civil_status.html">Demande administrative</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="citizen_participation.html">Numérisation</a>
+<a class="text-sm font-medium text-primary font-bold" href="youth_sports.html">Jeunesse &amp; Sports</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="Admin.html">Gouvernance</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-text-sub-light dark:text-text-sub-dark hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="hidden sm:flex items-center bg-background-light dark:bg-background-dark rounded-lg px-3 py-2 border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-text-sub-light dark:text-text-sub-dark text-xl">search</span>
+<input class="bg-transparent border-none text-sm ml-2 focus:ring-0 w-48 text-text-main-light dark:text-text-main-dark placeholder-text-sub-light dark:placeholder-text-sub-dark" placeholder="Rechercher..."/>
+</div>
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-10 border-2 border-primary cursor-pointer" data-alt="User profile picture showing a smiling municipal administrator" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8wMwLi5lgloxq1DQ7OKhiU_IKTwt3mAmhV_bs2H-aeSfSeIhyyJ6avbt7A963Y1RdRPkKs5GF-ZRUNHtlx-N1YPzIRMPkCtMcAUhtnGB07kiHDYLrQp5xxD_EPg4MEt7JAjKp6AYeSxSmB570UNwMd603r-Mz2OmG8sgoiRASY5HIXfKjwq92xFqCPTs4gvRWq2yviqisTKdnAtS07urFg4NHukpvAO4gkcTfUA3OnUQj9-Nimiy50GTV4_HlTGXqhsinJaCl2RM");'>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1440px] mx-auto px-4 md:px-10 py-8">
+<!-- Page Heading & Actions -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-8">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-1 rounded bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider">Agenda</span>
+<span class="flex items-center text-xs text-text-sub-light dark:text-text-sub-dark gap-1">
+<span class="material-symbols-outlined text-sm">verified</span> Éco-Actif
+                    </span>
+</div>
+<h1 class="text-3xl md:text-4xl font-black tracking-tight">Agenda Jeunesse et Sports</h1>
+<p class="text-text-sub-light dark:text-text-sub-dark text-base max-w-2xl">
+                    Découvrez les événements sportifs et culturels à Khombole. Réservez vos terrains, rejoignez des associations et participez à la vie locale.
+                </p>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark text-sm font-bold hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<span class="material-symbols-outlined text-lg">download</span>
+                    Télécharger l'agenda
+                </button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-black text-sm font-bold hover:bg-primary-dark hover:text-white transition-colors shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-lg">add</span>
+                    Proposer un événement
+                </button>
+</div>
+</div>
+<!-- Stats Overview -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg text-blue-600 dark:text-blue-400">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<span class="text-primary text-sm font-bold bg-primary/10 px-2 py-0.5 rounded-full">+5%</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Associations actives</p>
+<p class="text-2xl font-bold mt-1">42</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg text-orange-600 dark:text-orange-400">
+<span class="material-symbols-outlined">calendar_month</span>
+</div>
+<span class="text-primary text-sm font-bold bg-primary/10 px-2 py-0.5 rounded-full">+12%</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Réservations ce mois</p>
+<p class="text-2xl font-bold mt-1">156</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg text-purple-600 dark:text-purple-400">
+<span class="material-symbols-outlined">sports_soccer</span>
+</div>
+<span class="text-gray-500 text-sm font-bold bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">Stable</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Matchs cette semaine</p>
+<p class="text-2xl font-bold mt-1">8</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-primary/20 rounded-lg text-primary-dark">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<span class="text-primary text-sm font-bold bg-primary/10 px-2 py-0.5 rounded-full">+15%</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Événements éco-certifiés</p>
+<p class="text-2xl font-bold mt-1">12</p>
+</div>
+</div>
+<!-- Calendar Widget -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark overflow-hidden mb-8">
+<div class="p-5 border-b border-border-light dark:border-border-dark flex justify-between items-center">
+<h3 class="font-bold text-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">calendar_month</span>
+                            Novembre 2023
+                        </h3>
+<div class="flex gap-2">
+<button class="size-8 rounded-full hover:bg-background-light dark:hover:bg-background-dark flex items-center justify-center border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<span class="text-sm font-medium flex items-center px-2">Semaine 45</span>
+<button class="size-8 rounded-full hover:bg-background-light dark:hover:bg-background-dark flex items-center justify-center border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="p-5">
+<div class="grid grid-cols-7 gap-2 mb-4">
+<div class="text-center text-sm font-bold text-text-sub-light dark:text-text-sub-dark">Lun</div>
+<div class="text-center text-sm font-bold text-text-sub-light dark:text-text-sub-dark">Mar</div>
+<div class="text-center text-sm font-bold text-text-sub-light dark:text-text-sub-dark">Mer</div>
+<div class="text-center text-sm font-bold text-text-sub-light dark:text-text-sub-dark">Jeu</div>
+<div class="text-center text-sm font-bold text-text-sub-light dark:text-text-sub-dark">Ven</div>
+<div class="text-center text-sm font-bold text-text-sub-light dark:text-text-sub-dark">Sam</div>
+<div class="text-center text-sm font-bold text-text-sub-light dark:text-text-sub-dark">Dim</div>
+</div>
+<div class="grid grid-cols-7 gap-2">
+<button class="size-10 rounded-full hover:bg-primary hover:text-white flex items-center justify-center text-sm font-medium transition-colors">9</button>
+<button class="size-10 rounded-full hover:bg-primary hover:text-white flex items-center justify-center text-sm font-medium transition-colors">10</button>
+<button class="size-10 rounded-full hover:bg-primary hover:text-white flex items-center justify-center text-sm font-medium transition-colors">11</button>
+<button class="size-10 rounded-full hover:bg-primary hover:text-white flex items-center justify-center text-sm font-medium transition-colors">12</button>
+<button class="size-10 rounded-full hover:bg-primary hover:text-white flex items-center justify-center text-sm font-medium transition-colors">13</button>
+<button class="size-10 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-medium relative">
+                            14
+                            <div class="absolute -bottom-1 size-2 bg-green-300 rounded-full"></div>
+                        </button>
+<button class="size-10 rounded-full bg-orange-500 text-white flex items-center justify-center text-sm font-medium relative">
+                            15
+                            <div class="absolute -bottom-1 size-2 bg-orange-300 rounded-full"></div>
+                        </button>
+</div>
+</div>
+</div>
+<!-- Upcoming Events -->
+<div class="mb-8">
+<div class="flex justify-between items-center mb-6 px-1">
+<h3 class="text-xl font-bold">Événements à venir</h3>
+<span class="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded-full">3 événements</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Event Card 1 -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark overflow-hidden hover:border-primary transition-colors group">
+<div class="h-48 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8wMwLi5lgloxq1DQ7OKhiU_IKTwt3mAmhV_bs2H-aeSfSeIhyyJ6avbt7A963Y1RdRPkKs5GF-ZRUNHtlx-N1YPzIRMPkCtMcAUhtnGB07kiHDYLrQp5xxD_EPg4MEt7JAjKp6AYeSxSmB570UNwMd603r-Mz2OmG8sgoiRASY5HIXfKjwq92xFqCPTs4gvRWq2yviqisTKdnAtS07urFg4NHukpvAO4gkcTfUA3OnUQj9-Nimiy50GTV4_HlTGXqhsinJaCl2RM');">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded-lg text-sm font-bold">5 NOV</div>
+<div class="absolute top-4 right-4 bg-primary/90 text-black px-2 py-1 rounded text-xs font-bold">Écologie</div>
+</div>
+<div class="p-5">
+<h4 class="font-bold text-lg mb-2">Journée de Reboisement 'Khombole Vert'</h4>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-3">Participez à la plantation d'arbres dans le quartier Nord. Apportez vos gants et votre bonne humeur !</p>
+<div class="flex items-center justify-between text-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span>Place Publique</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>09:00 - 14:00</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-4">
+<div class="flex -space-x-2">
+<div class="size-8 rounded-full bg-blue-500 border-2 border-white dark:border-card-dark"></div>
+<div class="size-8 rounded-full bg-green-500 border-2 border-white dark:border-card-dark"></div>
+<div class="size-8 rounded-full bg-purple-500 border-2 border-white dark:border-card-dark"></div>
+<span class="text-xs text-text-sub-light dark:text-text-sub-dark ml-2">+12 participants</span>
+</div>
+<button class="bg-primary text-black text-sm font-bold px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark overflow-hidden hover:border-primary transition-colors group">
+<div class="h-48 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8wMwLi5lgloxq1DQ7OKhiU_IKTwt3mAmhV_bs2H-aeSfSeIhyyJ6avbt7A963Y1RdRPkKs5GF-ZRUNHtlx-N1YPzIRMPkCtMcAUhtnGB07kiHDYLrQp5xxD_EPg4MEt7JAjKp6AYeSxSmB570UNwMd603r-Mz2OmG8sgoiRASY5HIXfKjwq92xFqCPTs4gvRWq2yviqisTKdnAtS07urFg4NHukpvAO4gkcTfUA3OnUQj9-Nimiy50GTV4_HlTGXqhsinJaCl2RM');">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded-lg text-sm font-bold">12 NOV</div>
+<div class="absolute top-4 right-4 bg-primary/90 text-black px-2 py-1 rounded text-xs font-bold">Culture</div>
+</div>
+<div class="p-5">
+<h4 class="font-bold text-lg mb-2">Soirée Culturelle 'Racines'</h4>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-3">Danse traditionnelle, théâtre et poésie pour célébrer l'histoire de notre ville.</p>
+<div class="flex items-center justify-between text-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span>Centre Culturel</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>20:00 - 23:00</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-4">
+<div class="flex -space-x-2">
+<div class="size-8 rounded-full bg-red-500 border-2 border-white dark:border-card-dark"></div>
+<div class="size-8 rounded-full bg-yellow-500 border-2 border-white dark:border-card-dark"></div>
+<div class="size-8 rounded-full bg-pink-500 border-2 border-white dark:border-card-dark"></div>
+<span class="text-xs text-text-sub-light dark:text-text-sub-dark ml-2">+8 participants</span>
+</div>
+<button class="bg-primary text-black text-sm font-bold px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark overflow-hidden hover:border-primary transition-colors group">
+<div class="h-48 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8wMwLi5lgloxq1DQ7OKhiU_IKTwt3mAmhV_bs2H-aeSfSeIhyyJ6avbt7A963Y1RdRPkKs5GF-ZRUNHtlx-N1YPzIRMPkCtMcAUhtnGB07kiHDYLrQp5xxD_EPg4MEt7JAjKp6AYeSxSmB570UNwMd603r-Mz2OmG8sgoiRASY5HIXfKjwq92xFqCPTs4gvRWq2yviqisTKdnAtS07urFg4NHukpvAO4gkcTfUA3OnUQj9-Nimiy50GTV4_HlTGXqhsinJaCl2RM');">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded-lg text-sm font-bold">15 NOV</div>
+<div class="absolute top-4 right-4 bg-primary/90 text-black px-2 py-1 rounded text-xs font-bold">Sport</div>
+</div>
+<div class="p-5">
+<h4 class="font-bold text-lg mb-2">Tournoi Inter-Quartiers</h4>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-3">Compétition amicale de football entre les quartiers de Khombole.</p>
+<div class="flex items-center justify-between text-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span>Stade Municipal</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>14:00 - 18:00</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-4">
+<div class="flex -space-x-2">
+<div class="size-8 rounded-full bg-indigo-500 border-2 border-white dark:border-card-dark"></div>
+<div class="size-8 rounded-full bg-teal-500 border-2 border-white dark:border-card-dark"></div>
+<div class="size-8 rounded-full bg-orange-500 border-2 border-white dark:border-card-dark"></div>
+<span class="text-xs text-text-sub-light dark:text-text-sub-dark ml-2">+16 participants</span>
+</div>
+<button class="bg-primary text-black text-sm font-bold px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Infrastructures -->
+<div class="mb-8">
+<div class="flex justify-between items-center mb-6 px-1">
+<h3 class="text-xl font-bold">Infrastructures</h3>
+<a class="text-primary hover:text-primary-dark text-sm font-bold flex items-center gap-1" href="#">Tout voir <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Infra Card 1 -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark overflow-hidden hover:border-primary transition-colors">
+<div class="h-48 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8wMwLi5lgloxq1DQ7OKhiU_IKTwt3mAmhV_bs2H-aeSfSeIhyyJ6avbt7A963Y1RdRPkKs5GF-ZRUNHtlx-N1YPzIRMPkCtMcAUhtnGB07kiHDYLrQp5xxD_EPg4MEt7JAjKp6AYeSxSmB570UNwMd603r-Mz2OmG8sgoiRASY5HIXfKjwq92xFqCPTs4gvRWq2yviqisTKdnAtS07urFg4NHukpvAO4gkcTfUA3OnUQj9-Nimiy50GTV4_HlTGXqhsinJaCl2RM');">
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+                            Disponible
+                        </div>
+</div>
+<div class="p-5">
+<h4 class="font-bold text-lg mb-2">Stade Municipal</h4>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-4">Terrain de football principal avec tribunes et éclairage LED éco-énergétique.</p>
+<button class="w-full bg-primary text-black text-sm font-bold py-2 rounded-lg hover:bg-primary-dark transition-colors">Réserver</button>
+</div>
+</div>
+<!-- Infra Card 2 -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark overflow-hidden hover:border-primary transition-colors">
+<div class="h-48 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8wMwLi5lgloxq1DQ7OKhiU_IKTwt3mAmhV_bs2H-aeSfSeIhyyJ6avbt7A963Y1RdRPkKs5GF-ZRUNHtlx-N1YPzIRMPkCtMcAUhtnGB07kiHDYLrQp5xxD_EPg4MEt7JAjKp6AYeSxSmB570UNwMd603r-Mz2OmG8sgoiRASY5HIXfKjwq92xFqCPTs4gvRWq2yviqisTKdnAtS07urFg4NHukpvAO4gkcTfUA3OnUQj9-Nimiy50GTV4_HlTGXqhsinJaCl2RM');">
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">cancel</span>
+                            Complet
+                        </div>
+</div>
+<div class="p-5">
+<h4 class="font-bold text-lg mb-2">Terrain Basket</h4>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-4">Court extérieur avec paniers ajustables et surface en béton recyclé.</p>
+<button class="w-full bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 text-sm font-bold py-2 rounded-lg cursor-not-allowed">Complet</button>
+</div>
+</div>
+<!-- Infra Card 3 -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark overflow-hidden hover:border-primary transition-colors">
+<div class="h-48 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8wMwLi5lgloxq1DQ7OKhiU_IKTwt3mAmhV_bs2H-aeSfSeIhyyJ6avbt7A963Y1RdRPkKs5GF-ZRUNHtlx-N1YPzIRMPkCtMcAUhtnGB07kiHDYLrQp5xxD_EPg4MEt7JAjKp6AYeSxSmB570UNwMd603r-Mz2OmG8sgoiRASY5HIXfKjwq92xFqCPTs4gvRWq2yviqisTKdnAtS07urFg4NHukpvAO4gkcTfUA3OnUQj9-Nimiy50GTV4_HlTGXqhsinJaCl2RM');">
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+                            Disponible
+                        </div>
+</div>
+<div class="p-5">
+<h4 class="font-bold text-lg mb-2">Salle Polyvalente</h4>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-4">Espace intérieur pour activités culturelles et sportives indoor.</p>
+<button class="w-full bg-primary text-black text-sm font-bold py-2 rounded-lg hover:bg-primary-dark transition-colors">Réserver</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Associations -->
+<div class="mb-8">
+<div class="flex justify-between items-center mb-6 px-1">
+<h3 class="text-xl font-bold">Associations</h3>
+<a class="text-primary hover:text-primary-dark text-sm font-bold flex items-center gap-1" href="#">Voir toutes <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="bg-primary/5 dark:bg-primary/10 rounded-xl p-6 mb-6">
+<p class="text-text-main-light dark:text-text-main-dark text-lg font-bold mb-2">Rejoignez une communauté active et participez à la vie locale !</p>
+<p class="text-text-sub-light dark:text-text-sub-dark">Découvrez les associations de Khombole et trouvez celle qui correspond à vos intérêts.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Assoc Card 1 -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark p-5 hover:border-primary transition-colors">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400">
+<span class="material-symbols-outlined text-2xl">sports_soccer</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">ASC Khombole</h4>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm">Sport &amp; Jeunesse</p>
+</div>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-4">Club de football pour jeunes et adultes. Entraînements hebdomadaires et compétitions locales.</p>
+<button class="w-full bg-primary text-black text-sm font-bold py-2 rounded-lg hover:bg-primary-dark transition-colors">Rejoindre</button>
+</div>
+<!-- Assoc Card 2 -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark p-5 hover:border-primary transition-colors">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400">
+<span class="material-symbols-outlined text-2xl">eco</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Club Écologie</h4>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm">Environnement</p>
+</div>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-4">Actions de protection de l'environnement, nettoyages et sensibilisation écologique.</p>
+<button class="w-full bg-primary text-black text-sm font-bold py-2 rounded-lg hover:bg-primary-dark transition-colors">Rejoindre</button>
+</div>
+<!-- Assoc Card 3 -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark p-5 hover:border-primary transition-colors">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-12 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400">
+<span class="material-symbols-outlined text-2xl">palette</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Ateliers Créatifs</h4>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm">Culture &amp; Art</p>
+</div>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-4">Cours de peinture, musique et artisanat traditionnel pour tous les âges.</p>
+<button class="w-full bg-primary text-black text-sm font-bold py-2 rounded-lg hover:bg-primary-dark transition-colors">Rejoindre</button>
+</div>
+</div>
+</div>
+<!-- Eco-Citizen Alert -->
+<div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-6">
+<div class="flex items-start gap-4">
+<div class="size-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400 flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">recycling</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-lg text-green-800 dark:text-green-200 mb-2">Alerte Éco-Citoyen</h4>
+<p class="text-green-700 dark:text-green-300 mb-4">Pour le match de ce weekend, pensez au covoiturage ou au vélo ! Parking sécurisé disponible près du stade.</p>
+<div class="flex items-center gap-2 text-sm text-green-600 dark:text-green-400">
+<span class="material-symbols-outlined">directions_car</span>
+<span>Covoiturage recommandé</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Simple Footer -->
+<footer class="border-t border-border-light dark:border-border-dark mt-auto bg-card-light dark:bg-card-dark py-8 px-10">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-text-sub-light dark:text-text-sub-dark">
+<p>© 2026 Commune de Khombole. Tous droits réservés.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Politique de confidentialité</a>
+<a class="hover:text-primary" href="#">Conditions d'utilisation</a>
+<a class="hover:text-primary" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
