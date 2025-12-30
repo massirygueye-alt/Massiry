@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Participation Citoyenne - Khombole</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec6d",
+                        "primary-dark": "#0ea64d",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102218",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1a2e22",
+                        "text-main-light": "#0d1b13",
+                        "text-main-dark": "#ffffff",
+                        "text-sub-light": "#4c9a6c",
+                        "text-sub-dark": "#8ebf9f",
+                        "border-light": "#e7f3ec",
+                        "border-dark": "#2a4034",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-filled {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main-light dark:text-text-main-dark min-h-screen flex flex-col overflow-x-hidden transition-colors duration-200">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4">
+<div class="size-8 flex items-center justify-center">
+<img src="OIP.jpg" alt="Khombole Logo" class="w-full h-full object-cover rounded"/>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Mairie de Khombole</h2>
+</div>
+<div class="hidden lg:flex items-center gap-9">
+    <a class="text-sm font-medium hover:text-primary transition-colors" href="projects_tracking.html">Accueil</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="civil_status.html">Demande administrative</a>
+<a class="text-sm font-medium text-primary font-bold" href="citizen_participation.html">Numérisation</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="youth_sports.html">Jeunesse &amp; Sports</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="Admin.html">Gouvernance</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-text-sub-light dark:text-text-sub-dark hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="hidden sm:flex items-center bg-background-light dark:bg-background-dark rounded-lg px-3 py-2 border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-text-sub-light dark:text-text-sub-dark text-xl">search</span>
+<input class="bg-transparent border-none text-sm ml-2 focus:ring-0 w-48 text-text-main-light dark:text-text-main-dark placeholder-text-sub-light dark:placeholder-text-sub-dark" placeholder="Rechercher..."/>
+</div>
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-10 border-2 border-primary cursor-pointer" data-alt="User profile picture showing a smiling municipal administrator" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8wMwLi5lgloxq1DQ7OKhiU_IKTwt3mAmhV_bs2H-aeSfSeIhyyJ6avbt7A963Y1RdRPkKs5GF-ZRUNHtlx-N1YPzIRMPkCtMcAUhtnGB07kiHDYLrQp5xxD_EPg4MEt7JAjKp6AYeSxSmB570UNwMd603r-Mz2OmG8sgoiRASY5HIXfKjwq92xFqCPTs4gvRWq2yviqisTKdnAtS07urFg4NHukpvAO4gkcTfUA3OnUQj9-Nimiy50GTV4_HlTGXqhsinJaCl2RM");'>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1440px] mx-auto px-4 md:px-10 py-8">
+<!-- Page Heading & Actions -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-8">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-1 rounded bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider">Participation</span>
+<span class="flex items-center text-xs text-text-sub-light dark:text-text-sub-dark gap-1">
+<span class="material-symbols-outlined text-sm">verified</span> Éco-Active
+                    </span>
+</div>
+<h1 class="text-3xl md:text-4xl font-black tracking-tight">Participation Citoyenne</h1>
+<p class="text-text-sub-light dark:text-text-sub-dark text-base max-w-2xl">
+                    Participez activement à la vie démocratique de Khombole. Votez, proposez des idées et suivez les décisions municipales.
+                </p>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark text-sm font-bold hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<span class="material-symbols-outlined text-lg">download</span>
+                    Guide citoyen
+                </button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-black text-sm font-bold hover:bg-primary-dark hover:text-white transition-colors shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-lg">add</span>
+                    Nouvelle proposition
+                </button>
+</div>
+</div>
+<!-- Stats Overview -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg text-blue-600 dark:text-blue-400">
+<span class="material-symbols-outlined">how_to_vote</span>
+</div>
+<span class="text-primary text-sm font-bold bg-primary/10 px-2 py-0.5 rounded-full">+8%</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Participation électorale</p>
+<p class="text-2xl font-bold mt-1">72%</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg text-green-600 dark:text-green-400">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<span class="text-primary text-sm font-bold bg-primary/10 px-2 py-0.5 rounded-full">+15%</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Propositions soumises</p>
+<p class="text-2xl font-bold mt-1">156</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg text-purple-600 dark:text-purple-400">
+<span class="material-symbols-outlined">forum</span>
+</div>
+<span class="text-primary text-sm font-bold bg-primary/10 px-2 py-0.5 rounded-full">+22%</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Discussions actives</p>
+<p class="text-2xl font-bold mt-1">89</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg text-orange-600 dark:text-orange-400">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<span class="text-primary text-sm font-bold bg-primary/10 px-2 py-0.5 rounded-full">+5%</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium">Décisions prises</p>
+<p class="text-2xl font-bold mt-1">43</p>
+</div>
+</div>
+<!-- Active Proposals -->
+<div class="mb-8">
+<div class="flex justify-between items-center mb-6 px-1">
+<h3 class="text-xl font-bold">Propositions en cours</h3>
+<span class="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded-full">8 propositions</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Proposal Card 1 -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark p-6 hover:border-primary transition-colors">
+<div class="flex items-start justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400">
+<span class="material-symbols-outlined">park</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Nouveau parc urbain</h4>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark">Proposé par Marie Dupont</p>
+</div>
+</div>
+<span class="bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-300 text-xs font-bold px-2 py-1 rounded-full">En discussion</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-4">Création d'un espace vert de 2 hectares dans le quartier Sud avec aires de jeux et pistes cyclables.</p>
+<div class="flex items-center justify-between text-sm mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+<span>124 votes pour</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">thumb_down</span>
+<span>23 votes contre</span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 bg-primary text-black text-sm font-bold py-2 rounded-lg hover:bg-primary-dark transition-colors">Voter pour</button>
+<button class="flex-1 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark text-sm font-bold py-2 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">Commenter</button>
+</div>
+</div>
+<!-- Proposal Card 2 -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark p-6 hover:border-primary transition-colors">
+<div class="flex items-start justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400">
+<span class="material-symbols-outlined">school</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Programme éducatif numérique</h4>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark">Proposé par Conseil des jeunes</p>
+</div>
+</div>
+<span class="bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300 text-xs font-bold px-2 py-1 rounded-full">Approuvé</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-4">Formation gratuite en informatique pour les seniors et mise à disposition d'ordinateurs dans les centres sociaux.</p>
+<div class="flex items-center justify-between text-sm mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+<span>89 votes pour</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">thumb_down</span>
+<span>12 votes contre</span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 text-sm font-bold py-2 rounded-lg cursor-not-allowed">Vote clos</button>
+<button class="flex-1 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark text-sm font-bold py-2 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">Voir détails</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Voting Section -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark p-6 mb-8">
+<h3 class="font-bold text-xl mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">how_to_vote</span>
+                    Votez sur les propositions actuelles
+                </h3>
+<div class="space-y-6">
+<!-- Vote Item 1 -->
+<div class="pb-6 border-b border-border-light dark:border-border-dark">
+<div class="flex items-start gap-4">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined">recycling</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-lg mb-2">Système de tri sélectif obligatoire</h4>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-4">Mise en place de poubelles intelligentes avec récompenses pour les citoyens respectueux de l'environnement.</p>
+<div class="flex items-center gap-6 text-sm">
+<div class="flex items-center gap-2">
+<input type="radio" name="vote1" id="vote1-yes" class="text-primary"/>
+<label for="vote1-yes" class="cursor-pointer">Pour (67%)</label>
+</div>
+<div class="flex items-center gap-2">
+<input type="radio" name="vote1" id="vote1-no" class="text-primary"/>
+<label for="vote1-no" class="cursor-pointer">Contre (33%)</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Vote Item 2 -->
+<div>
+<div class="flex items-start gap-4">
+<div class="size-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 flex-shrink-0">
+<span class="material-symbols-outlined">directions_bus</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-lg mb-2">Extension du réseau de bus électrique</h4>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-4">Ajout de 3 nouvelles lignes desservant les quartiers périphériques avec véhicules zéro émission.</p>
+<div class="flex items-center gap-6 text-sm">
+<div class="flex items-center gap-2">
+<input type="radio" name="vote2" id="vote2-yes" class="text-primary"/>
+<label for="vote2-yes" class="cursor-pointer">Pour (78%)</label>
+</div>
+<div class="flex items-center gap-2">
+<input type="radio" name="vote2" id="vote2-no" class="cursor-pointer">Contre (22%)</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center">
+<button class="bg-primary text-black text-lg font-bold px-8 py-3 rounded-lg hover:bg-primary-dark transition-colors shadow-lg">Soumettre mon vote</button>
+</div>
+</div>
+<!-- Discussion Forum -->
+<div class="bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark p-6 mb-8">
+<h3 class="font-bold text-xl mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">forum</span>
+                    Forum de discussion
+                </h3>
+<div class="space-y-4">
+<!-- Discussion Item 1 -->
+<div class="pb-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-start gap-4">
+<div class="size-10 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-2">
+<h4 class="font-bold text-base">Amélioration de l'éclairage public</h4>
+<span class="text-xs text-text-sub-light dark:text-text-sub-dark">Par Ahmed K. • Il y a 2h</span>
+</div>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark mb-3">Proposition d'installer des lampadaires solaires dans les rues secondaires pour réduire les coûts énergétiques.</p>
+<div class="flex items-center gap-4 text-sm">
+<button class="flex items-center gap-1 text-primary hover:text-primary-dark">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+<span>12</span>
+</button>
+<button class="flex items-center gap-1 text-text-sub-light dark:text-text-sub-dark hover:text-primary">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span>5 réponses</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Discussion Item 2 -->
+<div>
+<div class="flex items-start gap-4">
+<div class="size-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-2">
+<h4 class="font-bold text-base">Jardin communautaire partagé</h4>
+<span class="text-xs text-text-sub-light dark:text-text-sub-dark">Par Fatima M. • Il y a 5h</span>
+</div>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark mb-3">Idée de créer un espace de jardinage collectif pour cultiver des légumes bio et renforcer les liens sociaux.</p>
+<div class="flex items-center gap-4 text-sm">
+<button class="flex items-center gap-1 text-primary hover:text-primary-dark">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+<span>28</span>
+</button>
+<button class="flex items-center gap-1 text-text-sub-light dark:text-text-sub-dark hover:text-primary">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span>12 réponses</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-6">
+<button class="bg-primary text-black text-sm font-bold px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors">Nouvelle discussion</button>
+</div>
+</div>
+<!-- Contact & Support -->
+<div class="bg-primary/5 dark:bg-primary/10 rounded-xl border border-primary/20 p-6">
+<div class="text-center">
+<h3 class="font-bold text-lg mb-2">Besoin d'aide pour participer ?</h3>
+<p class="text-text-sub-light dark:text-text-sub-dark mb-4">Notre équipe vous accompagne dans vos démarches citoyennes.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-black text-sm font-bold hover:bg-primary-dark transition-colors">
+<span class="material-symbols-outlined">help</span>
+                    Centre d'aide
+                </button>
+<button class="flex items-center gap-2 px-6 py-3 rounded-lg bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark text-sm font-bold hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<span class="material-symbols-outlined">phone</span>
+                    Contact mairie
+                </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Simple Footer -->
+<footer class="border-t border-border-light dark:border-border-dark mt-auto bg-card-light dark:bg-card-dark py-8 px-10">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-text-sub-light dark:text-text-sub-dark">
+<p>© 2026 Commune de Khombole. Tous droits réservés.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Politique de confidentialité</a>
+<a class="hover:text-primary" href="#">Conditions d'utilisation</a>
+<a class="hover:text-primary" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

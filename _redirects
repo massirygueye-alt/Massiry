@@ -1,0 +1,9 @@
+# Redirects for clean URLs
+/ /projects_tracking.html 200
+/admin /Admin.html 200
+/citizen-participation /citizen_participation.html 200
+/civil-status /civil_status.html 200
+/projects-tracking /projects_tracking.html 200
+/youth-management /youth_management.html 200
+/youth-sports /youth_sports.html 200
+/view /view.htm 200
